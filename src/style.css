@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+:root {
+    --purple: #652CD1;
+    --light-purple: #845EEE;
+    --dark: #121826;
+    --gray-1: #212936;
+    --gray-2: #394150;
+    --gray-3: #4D5562;
+    --light-gray: #A1A1A9;
+    --white: #E5E7EB
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    background-color: var(--dark);
+}
+.gradiantTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background: radial-gradient(circle 300px at left top, var(--purple) -300px, var(--dark) 200px);
+}
+.gradiantBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: radial-gradient(circle 300px at right bottom, var(--purple) -300px, var(--dark) 200px);
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.container{
+    max-width: 500px;
+    position: relative;
+}
+.register-card{
+    width: 450px;
+    height: 400px;
+    background: var(--gray-1);
+    padding: 35px;
+    border: var(--gray-3) 0.5px solid;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-input-label{
+    color: var(--light-gray);
+    font-size: 12px;  
+}
+.form-input-input, .topic-label{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: var(--gray-3) 2px solid;
+    padding: 15px;
+    margin: 7.5px 0 25px 0;
+    border-radius: 10px;
+    color: var(--light-gray);
+    font-size: 14px;
+}
+.form-input-input:focus {
+    outline: var(--light-purple) solid 1.5px;
+}
+.btn {
+    display: flex;
+    margin: 0 auto;
+    align-self: baseline;
+    background: linear-gradient( var(--light-purple)10%,var(--purple) 100%);
+    border: none;
+    padding: 12px 35px;
+    border-radius: 25px;
+    color: var(--white);
+    cursor: pointer;
+}
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.step-label{
+    position: absolute;
+    left: 80px;
+    font-size: 12px;
+    color: var(--gray-2);
+    font-weight: 600;
+}
+.step-switch-container{
+    display: flex;
+    gap: 15px;
+}
+.step-switch-icon{
+    width: 12px;
+    height: 12px;
+    background-color: var(--gray-2);
+    border-radius: 50%;
+}
+input[type=checkbox] {
+    display: none;
+  }
+  .topic-label{
+    background-color: var(--gray-2);
+    border: var(--gray-3) 1px solid;
+    cursor: pointer;
+  }
+.checkbox-btn:checked + .topic-label{
+    background-color: var(--light-purple);
+    color: var(--white);
+  }
+  .summary {
+    margin-bottom: 20px;
+  }
+  .summary p{
+    color: var(--light-gray);
+    margin: 15px 0;
+  }
+  .summary span{
+    color: var(--white);
+  }
+
+  .hidden {
+    display: none;
+  }
+  .invalid{
+    border: #a01212 2px solid;
+  }
+  input:valid {
+    border: var(--purple) 1px solid;
+  }
+  input:autofill{
+    background-color: transparent;
+  }
+  .message-alert {
+    position: absolute;
+    top: -50px;
+    text-align: center;
+    width: 100%;
+    background-color: #a01212ba;
+    border-radius: 3.5px;
+    padding: 10px;
+  }
+  .active{
+    background-color: var(--purple);
+    box-shadow: 0px 0px 15px 2px var(--light-purple);
+  }
+  .completed {
+    background-color: var(--purple);
+  }
+  .icon-success {
+    font-size: 50px;
+    color: var(--light-purple);
+  }
+  #lastStep{
+    align-items: center;
+    justify-content: center;
+  }
+@media (max-width: 450px) {
+    .register-card{
+        max-width: 310px;
+    }
+    .step-label{
+        position: absolute;
+        left: 20px;
+    }
+}

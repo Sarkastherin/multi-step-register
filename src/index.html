@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <script
+      src="https://kit.fontawesome.com/8a3e06b5d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Multi-step Register</title>
+  </head>
+  <body onload="setCountStep(1)">
+    <div class="gradiantTop"></div>
+    <div class="gradiantBottom"></div>
+    <main>
+      <div class="container">
+        <div class="register-card" id="stepOne">
+          <h2>Register</h2>
+          <form action="">
+            <div class="form-input">
+              <label for="" class="form-input-label">Name</label>
+              <input
+                class="form-input-input"
+                type="text"
+                id="name"
+                placeholder="enter your name""
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="" class="form-input-label">Email</label>
+              <input
+                class="form-input-input"
+                type="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <button class="btn" id="btnStep_1" type="submit">Continue</button>
+          </form>
+        </div>
+        <div class="register-card hidden" id="stepTwo">
+          <h2>Which topics you are interested in?</h2>
+          <form action="">
+            <input
+              class="checkbox-btn"
+              id="topicSoftwareDev"
+              type="checkbox"
+              name="topic"
+              value="Software Development"
+            />
+            <label class="topic-label" for="topicSoftwareDev"
+              >Software Development</label
+            >
+            <input
+              class="checkbox-btn"
+              id="topicUserX"
+              type="checkbox"
+              name="topic"
+              value="User Experience"
+            />
+            <label class="topic-label" for="topicUserX">User Experience</label>
+            <input
+              class="checkbox-btn"
+              id="topicGraphcDs"
+              type="checkbox"
+              name="topic"
+              value="Graphic Design"
+            />
+            <label class="topic-label" for="topicGraphcDs"
+              >Graphic Design</label
+            >
+            <button class="btn" type="button" id="btnStep_2">Continue</button>
+          </form>
+        </div>
+        <div class="register-card hidden" id="stepThree">
+          <h2>Summary</h2>
+          <div class="summary">
+            <p>Name: <span id="nameConfirm"></span></p>
+            <p>Email: <span id="emailConfirm"></span></p>
+            <p>Topics:</p>
+            <ul id="topicsConfirm">
+            </ul>
+          </div>
+          <button class="btn" type="button" id="finish">Confirm</button>
+        </div>
+        <div class="register-card hidden" id="lastStep">
+            <h2>Register success!</h2>
+            <span class="icon-success"><i class="fa-regular fa-face-laugh-wink"></i></span>
+          </div>
+        <div class="step">
+          <span class="step-label"></span>
+          <div class="step-switch-container">
+            <div id="stepIconOne" class="step-switch-icon active"></div>
+            <div id="stepIconTwo" class="step-switch-icon"></div>
+            <div id="stepIconThree" class="step-switch-icon"></div>
+          </div>
+        </div>
+        <div class="message-alert hidden" id="messageAlert">
+            <p class="message-alert-text" id="messageAlertText"></p>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
