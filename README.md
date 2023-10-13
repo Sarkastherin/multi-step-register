@@ -5,7 +5,7 @@ The challenge involves creating a 3-step registration form with different sectio
 
 ## Overview
 
-![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://raw.githubusercontent.com/Sarkastherin/multi-step-register/main/ss_multi_step-form.png))
+![App Screenshot](ss_multi_step-form.png)
 
 For this challenge, I had to enhance my CSS skills. I was able to create a background gradient, work with forms, and I'm very pleased with the responsive design's result.
 ## Built with
@@ -21,8 +21,7 @@ For this challenge, I had to enhance my CSS skills. I was able to create a backg
 - The page is responsive on different screen sizes.
 
 ## Demo
-
-
+[See my demo](https://sarkastherin.github.io/multi-step-register/)
 
 ## License
 
