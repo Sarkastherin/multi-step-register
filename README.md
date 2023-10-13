@@ -29,8 +29,7 @@ For this challenge, I had to enhance my CSS skills. I was able to create a backg
 
 ## Feedback
 
-If you have any feedback, please reach out to us at kathejudith@gmail.com
-
+If you have any feedback, please reach out to me kathejudith@gmail.com
 ## Contact
 
 - GitHub [@sarkastherin](https://{github.com/sarkastherin})
